@@ -1,7 +1,7 @@
 #include "fir.h"
 
-#include <defs.h>
-#include <stub.c>
+//#include <defs.h>
+//#include <stub.c>
 void __attribute__ ( ( section ( ".mprjram" ) ) ) initfir() {
 	//initial your fir
 	for(int i=0;i<N;i++){
@@ -26,7 +26,7 @@ int* __attribute__ ( ( section ( ".mprjram" ) ) ) fir(){
 		}
 		//============================
 		data_ram_start_ptr++;
-		if(data_ram_start_ptr>=N);
+		if(data_ram_start_ptr>=N)
 			data_ram_start_ptr = data_ram_start_ptr-N;
 		
 		outputsignal[i] = psum_buff;
