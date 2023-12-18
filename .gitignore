@@ -9,7 +9,7 @@
 
 
 
-/testbench/counter_la_fir/*.log
+/testbench/counter_la_fir/vivado.log
 
 
 testbench/counter_la_fir/*.vcd
