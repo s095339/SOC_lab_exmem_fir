@@ -6,7 +6,7 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.file 0 "/home/ubuntu/caravel-soc_fpga-lab/SOC_lab_exmem_fir/testbench/counter_la_fir" "counter_la_fir.c"
+	.file 0 "/home/ubuntu/m111061549/SOC/lab-exmem_fir/testbench/counter_la_fir" "counter_la_fir.c"
 	.align	2
 	.type	flush_cpu_icache, @function
 flush_cpu_icache:
@@ -482,22 +482,10 @@ main:
 	.loc 3 130 13
 	call	fir
 	sw	a0,-20(s0)
-	.loc 3 131 38
-	lw	a5,-20(s0)
-	lw	a5,0(a5)
-	.loc 3 131 43
-	slli	a4,a5,16
-	.loc 3 131 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 3 131 36
-	sw	a4,0(a5)
-	.loc 3 132 43
-	lw	a5,-20(s0)
-	addi	a5,a5,4
 	.loc 3 132 38
+	lw	a5,-20(s0)
 	lw	a5,0(a5)
-	.loc 3 132 47
+	.loc 3 132 43
 	slli	a4,a5,16
 	.loc 3 132 3
 	li	a5,637534208
@@ -506,7 +494,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 133 43
 	lw	a5,-20(s0)
-	addi	a5,a5,8
+	addi	a5,a5,4
 	.loc 3 133 38
 	lw	a5,0(a5)
 	.loc 3 133 47
@@ -518,7 +506,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 134 43
 	lw	a5,-20(s0)
-	addi	a5,a5,12
+	addi	a5,a5,8
 	.loc 3 134 38
 	lw	a5,0(a5)
 	.loc 3 134 47
@@ -530,7 +518,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 135 43
 	lw	a5,-20(s0)
-	addi	a5,a5,16
+	addi	a5,a5,12
 	.loc 3 135 38
 	lw	a5,0(a5)
 	.loc 3 135 47
@@ -542,7 +530,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 136 43
 	lw	a5,-20(s0)
-	addi	a5,a5,20
+	addi	a5,a5,16
 	.loc 3 136 38
 	lw	a5,0(a5)
 	.loc 3 136 47
@@ -554,7 +542,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 137 43
 	lw	a5,-20(s0)
-	addi	a5,a5,24
+	addi	a5,a5,20
 	.loc 3 137 38
 	lw	a5,0(a5)
 	.loc 3 137 47
@@ -566,7 +554,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 138 43
 	lw	a5,-20(s0)
-	addi	a5,a5,28
+	addi	a5,a5,24
 	.loc 3 138 38
 	lw	a5,0(a5)
 	.loc 3 138 47
@@ -578,7 +566,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 139 43
 	lw	a5,-20(s0)
-	addi	a5,a5,32
+	addi	a5,a5,28
 	.loc 3 139 38
 	lw	a5,0(a5)
 	.loc 3 139 47
@@ -590,7 +578,7 @@ main:
 	sw	a4,0(a5)
 	.loc 3 140 43
 	lw	a5,-20(s0)
-	addi	a5,a5,36
+	addi	a5,a5,32
 	.loc 3 140 38
 	lw	a5,0(a5)
 	.loc 3 140 47
@@ -602,23 +590,35 @@ main:
 	sw	a4,0(a5)
 	.loc 3 141 43
 	lw	a5,-20(s0)
-	addi	a5,a5,40
+	addi	a5,a5,36
 	.loc 3 141 38
 	lw	a5,0(a5)
-	.loc 3 141 48
+	.loc 3 141 47
 	slli	a4,a5,16
 	.loc 3 141 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 3 141 36
 	sw	a4,0(a5)
-	.loc 3 145 3
+	.loc 3 142 43
+	lw	a5,-20(s0)
+	addi	a5,a5,40
+	.loc 3 142 38
+	lw	a5,0(a5)
+	.loc 3 142 48
+	slli	a4,a5,16
+	.loc 3 142 3
 	li	a5,637534208
 	addi	a5,a5,12
-	.loc 3 145 36
+	.loc 3 142 36
+	sw	a4,0(a5)
+	.loc 3 146 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 3 146 36
 	li	a4,-1420754944
 	sw	a4,0(a5)
-	.loc 3 146 1
+	.loc 3 147 1
 	nop
 	lw	ra,28(sp)
 	.cfi_restore 1
@@ -1072,5 +1072,5 @@ main:
 .LASF0:
 	.string	"counter_la_fir.c"
 .LASF1:
-	.string	"/home/ubuntu/caravel-soc_fpga-lab/SOC_lab_exmem_fir/testbench/counter_la_fir"
+	.string	"/home/ubuntu/m111061549/SOC/lab-exmem_fir/testbench/counter_la_fir"
 	.ident	"GCC: (g1ea978e3066) 12.1.0"

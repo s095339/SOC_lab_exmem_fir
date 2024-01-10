@@ -1,5 +1,5 @@
 # 0 "counter_la_fir.c"
-# 1 "/home/ubuntu/caravel-soc_fpga-lab/SOC_lab_exmem_fir/testbench/counter_la_fir//"
+# 1 "/home/ubuntu/m111061549/SOC/lab-exmem_fir/testbench/counter_la_fir//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "counter_la_fir.c"
@@ -1679,6 +1679,7 @@ void main()
  (*(volatile uint32_t*) ((0xf0000000L + 0x3010L) + 8)) = (*(volatile uint32_t*) ((0xf0000000L + 0x3000L) + 8)) = 0x00000000;
 # 130 "counter_la_fir.c"
  int* tmp = fir();
+
  (*(volatile uint32_t*)0x2600000c) = *tmp << 16;
  (*(volatile uint32_t*)0x2600000c) = *(tmp+1) << 16;
  (*(volatile uint32_t*)0x2600000c) = *(tmp+2) << 16;

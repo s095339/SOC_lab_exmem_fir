@@ -1,5 +1,5 @@
 # 0 "../../firmware/isr.c"
-# 1 "/home/ubuntu/caravel-soc_fpga-lab/SOC_lab_exmem_fir/testbench/counter_la_fir//"
+# 1 "/home/ubuntu/m111061549/SOC/lab-exmem_fir/testbench/counter_la_fir//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "../../firmware/isr.c"

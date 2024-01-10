@@ -1,5 +1,5 @@
 # 0 "../../firmware/crt0_vex.S"
-# 1 "/home/ubuntu/caravel-soc_fpga-lab/SOC_lab_exmem_fir/testbench/counter_la_fir//"
+# 1 "/home/ubuntu/m111061549/SOC/lab-exmem_fir/testbench/counter_la_fir//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "../../firmware/crt0_vex.S"
@@ -75,6 +75,20 @@ sram_loop:
   add a2,a2,4
   j sram_loop
 sram_done:
+
+  la a0, _in_sram
+  la a1, _insram
+  la a2, _insram_rom
+insram_loop:
+  beq a0,a1,insram_done
+  lw a3,0(a2)
+  sw a3,0(a0)
+  add a0,a0,4
+  add a2,a2,4
+  j insram_loop
+insram_done:
+
+
 
 data_init:
   la a0, _fdata
